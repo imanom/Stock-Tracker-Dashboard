@@ -79,13 +79,13 @@
 	<body>
 		<div class="login-form">
 			<h1>Sign In with your credentials now.</h1>
-			<form action="http://localhost:3000/user/login" method="POST">
+			<form action="/user/login" method="POST">
 				<input type="text" name="email" placeholder="Email-ID" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <p> <%= error_message %></p>
                 <!-- <input type="submit"> -->
                 <button type="submit" class="buttn-1">Sign In</button>
-                <button type="button" class="buttn-2"><a href="http://localhost:3000/user/signup">Not a User? Sign Up Now</a></button>
+                <button type="button" class="buttn-2"><a href="/user/signup">Not a User? Sign Up Now</a></button>
 			</form>
 		</div>
 	</body>
