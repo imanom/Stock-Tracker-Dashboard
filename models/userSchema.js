@@ -37,7 +37,7 @@ userSchema.pre('save', function (next) {
 
     var num=13;    //Total number of stocks (documents) present in the stocks collection (hardcoded for now)
 
-    var select_num_stocks = getRandomIntInclusive(4,num);
+    var select_num_stocks = getRandomIntInclusive(7,num);
     var stock_nums = [];
     for(let i=0;i<select_num_stocks;i++){
       var val = getRandomIntInclusive(1,num)
