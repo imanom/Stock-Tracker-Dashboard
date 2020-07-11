@@ -3,12 +3,20 @@
 
 const stocks = require('./models/stockValues');
 const user = require('./models/userSchema');
-const changeStream = stocks.watch();
+
 var mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 
 
+/*
 
+Listens to the stocks DB using Mongo DB's changeStream feature.
+When the stock price updates, it emits an event using socket, and sends the updated data to the client.  
+(Refer public/client.js for the frontend JS to handle this)
+
+*/
+
+const changeStream = stocks.watch();
 
 module.exports = function(io) {
 
@@ -29,8 +37,7 @@ module.exports = function(io) {
         
     });
 
-    var userSockets = {};
-    var ID;
+   
 
     io.on('connection', function (socket) {
         console.log('a user connected',socket.request.session);

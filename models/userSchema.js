@@ -7,7 +7,7 @@ var userSchema = mongoose.Schema({
     password: { type: String, required:true},
     firstname:String,
     lastname:String,
-    stocks:[Number]
+    stocks:[Number]   //stores the "stock_id" of the stocks owned by the user
 },{
     timeStamps:true
 });
@@ -35,7 +35,7 @@ Also randomly assign a few stocks to the user.
 userSchema.pre('save', function (next) {
     var user = this;
 
-    var num=13;    //Total number of stocks (documents) present in the stocks collection (hardcoded for now)
+    var num=13;    //Total number of stocks (documents) present in the stocks collection in DB.(hardcoded for now)
 
     var select_num_stocks = getRandomIntInclusive(7,num);
     var stock_nums = [];

@@ -1,0 +1,111 @@
+* {box-sizing: border-box;
+cursor: context-menu;
+}
+
+            body { 
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            padding-bottom: 4em;
+            }
+
+            header {
+                position: relative;
+                height: 300px;
+                overflow: hidden;
+              }
+              h1 {
+                margin: 0;
+                padding: 100px 0;
+                font: 44px;
+                text-align: center;
+                /* font-family: "Lucida Console", Courier, monospace; */
+                position: relative;
+                color: white;
+                top: -1em;
+                opacity: 0.75
+              }
+
+              h4{
+                color: darkgoldenrod;
+              }
+              
+              
+              .header-bg {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to top left, #339999 0%, #000033 100%);
+                transform: skewY(-6deg);
+                transform-origin: top left;
+              }
+           
+            .header {
+            overflow: hidden;
+            padding: 20px 20px;
+            }
+
+            .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; 
+            position: relative;
+            }
+
+            .header a.logo {
+            font-size: 25px;
+            font-family: 'Amita';
+            }
+            
+            a:hover {
+             color: #D0D3D4;
+             cursor: pointer;
+            }
+
+           
+            .header-right {
+            float: right;
+            }
+            table {
+                border-collapse: collapse;
+                width: 90%;
+                
+                }
+
+                th, td {
+                text-align: center;
+                padding: 8px;
+                border-radius: 5em;
+                }
+
+                tr:nth-child(even){background-color: white}
+
+                th {
+                background-color:  black;
+                color: white;
+                height: 3em;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+                opacity: 0.8;
+                }
+                th:hover {
+                    background-color: black;
+                    opacity: unset;
+                   }
+
+            @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            
+            .header-right {
+                float: none;
+            }
+            }
+

@@ -1,11 +1,30 @@
+#login{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top left, #CC6600 0%, #CC6666 100%);
+}
+
+#signup{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top left, #003366 0%, #009966 100%);
+    }
+p{
+    color:#f44336;
+    font-size: 12px;
+}
 .login-form {
     width: 300px;
     margin: 0 auto;
     font-family: Tahoma, Geneva, sans-serif;
+    background-color: #F7F9F9;
+    padding: 42px 55px;
+    border-radius: 4em;
+    margin-top: 5em;
 }
 .login-form h1 {
     text-align: center;
-    color: #4d4d4d;
+    color: #000033;
     font-size: 24px;
     padding: 20px 0 20px 0;
 }
@@ -13,7 +32,7 @@
 .login-form input[type="text"] {
     width: 100%;
     padding: 15px;
-    border: 1px solid #dddddd;
+    border: 1px solid #8b8686;
     margin-bottom: 15px;
     box-sizing:border-box;
 }
@@ -42,7 +61,7 @@ button {
     opacity:1;
     }
 
- 
+
     .buttn-2 {
     /* padding: 14px 20px; */
     background-color: #f44336;
@@ -51,5 +70,3 @@ button {
     .buttn-2 a {
         color: white;
     }
-
-   
